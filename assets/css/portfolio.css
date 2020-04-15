@@ -1,0 +1,108 @@
+@import url("main.css");
+
+body {
+  padding-bottom: 5em;
+}
+
+/* SECTIONS */
+h2 {
+  text-align: center;
+  border-bottom: 2px solid;
+  margin: 2em 0 1em;
+  padding-bottom: .3em;
+}
+
+.section__content {
+  display: flex;
+  align-items: center;
+}
+
+.section__video + .section__description,
+.section__slideshow + .section__description,
+.section__description + .section__video {
+  margin-left: 2em;
+}
+
+.section__video {
+  height: 20em;
+  background-color: black;
+}
+
+/* LITTLE SLIDESHOW */
+.section__slideshow,
+.section__slideshow-image {
+  width: 31em;
+  height: 20em;
+}
+
+.section__slideshow {
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 2px solid #9D9D9D;
+  border-radius: 4px;
+  position: relative;
+}
+
+.section__slideshow-inner {
+  display: flex;
+  width: 93em;
+  transition: all 1s;
+  position: absolute;
+  left: 0;
+}
+
+.section__slideshow:hover .section__slideshow-footer {
+  display: flex;
+}
+
+/* Slideshow Footer */
+.section__slideshow-footer {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(56, 56, 56, 0.5);
+  color: #D2D2D2;
+  font-size: 3em;
+  padding: 0 .2em;
+  justify-content: space-between;
+}
+
+.section__slideshow-footer span:hover{
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.section__slideshow-footer .disabled {
+  visibility: hidden;
+}
+
+/* PAGE FOOTER */
+footer {
+  position: fixed;
+  bottom: -3em;
+  right: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #1BB4BA;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  transition: all 1s;
+  font-weight: 900;
+}
+
+footer.shown {
+  bottom: 0;
+}
+
+footer:hover {
+  background-color: #2ECAD0;
+}
+
+.footer__email {
+  color: #D75893;
+  text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
+}

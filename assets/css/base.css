@@ -1,0 +1,98 @@
+/*
+    Layout Properties (position, float, clear, display)
+    Box Model Properties (width, height, margin, padding)
+    Visual Properties (color, background, border, box-shadow)
+    Typography Properties (font-size, font-family, text-align, text-transform)
+    Misc Properties (cursor, overflow, z-index)
+*/
+
+/* GENERAL */
+body {
+  background-color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+/* HEADERS */
+h2, h3, h4, h5 {
+  color: #D75893;
+}
+h2, h3, h4, h5 {
+  font-variant: small-caps;
+}
+h1 {
+  font-family: 'Dynalight', cursive;
+  font-size: 8em;
+}
+h2 {
+  font-size: 3em;
+}
+
+/* CONTENT */
+p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  line-height: 1.2em;
+}
+a {
+  color: #1BB4BA;
+  text-decoration: none;
+}
+strong,
+.thicc {
+  font-weight: 500;
+}
+.lite {
+  font-weight: 200;
+  color: #BBBECE;
+}
+
+/* HERO */
+.hero {
+  padding: 2em 15% 2em;
+  margin-bottom: 2em;
+  color: #FFFFFF;
+  text-align: right;
+  background-color: #D75893;
+}
+.hero__title {
+  font-family: 'Dynalight', cursive;
+  font-weight: 400;
+}
+.hero__subtitle {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+/* RESPONSIVE (ish) PADDING */
+section {
+  padding: 0 15%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .hero {
+    padding: 3em 10% 2em;
+  }
+  section {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    padding: 3em 2em 2em;
+  }
+  section {
+    padding: 0 1em;
+  }
+}
+/* COLOURS
+  Bard Pink: #D75893
+  Paladin Cyan: #1BB4BA
+  Cleric Turquoise: #2ECAD0
+  Rogue Black: #333333
+  Aasimar Silver: #BBBECE
+*/
