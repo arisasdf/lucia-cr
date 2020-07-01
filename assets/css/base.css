@@ -1,3 +1,5 @@
+@import url("meyer-reset.css");
+
 /*
     Layout Properties (position, float, clear, display)
     Box Model Properties (width, height, margin, padding)
@@ -90,9 +92,9 @@ section {
   }
 }
 /* COLOURS
-  Bard Pink: #D75893
-  Paladin Cyan: #1BB4BA
-  Cleric Turquoise: #2ECAD0
-  Rogue Black: #333333
-  Aasimar Silver: #BBBECE
+  Bard Passionate Pink: #D75893
+  Paladin Noble Cyan: #1BB4BA
+  Cleric Gentle Turquoise: #2ECAD0
+  Rogue Blacky Black: #333333
+  Dwarven Sturdy Silver: #BBBECE
 */

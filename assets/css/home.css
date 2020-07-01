@@ -1,0 +1,34 @@
+@import url("base.css");
+
+.hero {
+  text-align: center;
+}
+
+.icon {
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	stroke-width: 0;
+	fill: #D75893;
+	vertical-align: -0.1em;
+	margin-right: .2em;
+}
+
+.icon-mail {
+	margin-right: .4em;
+}
+
+.business-card {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.8em;
+}
+
+.business-card ul {
+  border: 1px solid #BBBECE;
+  border-radius: 5px;
+  width: 16em;
+  display: inline-block;
+  padding: 1em 1.5em;
+  box-shadow: 5px 5px 3px 0px #BBBECE;
+}

@@ -1,8 +1,4 @@
-@import url("main.css");
-
-body {
-  padding-bottom: 5em;
-}
+@import url("base.css");
 
 /* SECTIONS */
 h2 {
@@ -80,6 +76,10 @@ h2 {
 }
 
 /* PAGE FOOTER */
+body {
+  padding-bottom: 5em;
+}
+
 footer {
   position: fixed;
   bottom: -3em;
