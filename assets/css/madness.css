@@ -1,0 +1,139 @@
+@import url("meyer-reset.css");
+
+
+/* GENERAL */
+
+html {
+  background-color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* VIEWER */
+
+.viewer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.viewer__image,
+.viewer__nav {
+  cursor: pointer;
+}
+
+.viewer__image {
+  flex-grow: 0;
+  overflow: scroll;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.viewer__image--contain {
+  overflow: hidden;
+}
+
+.viewer__image--contain img {
+  max-height: 100vh;
+}
+
+
+/* VIEWER NAV BUTTONS */
+
+.viewer__nav {
+  font-size: 3em;
+  font-weight: bold;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewer__nav span {
+  width: 0;
+  height: 0;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+}
+
+/* prev bttn */
+.viewer__nav--prev span {
+  border-right: 1.5em solid #151515;
+}
+
+.viewer__nav--prev:hover span {
+  border-right: 1.5em solid #444;
+}
+
+.viewer__nav--prev--activated span {
+  border-right: 1.5em solid #181c22;
+}
+
+.viewer__nav--prev--activated:hover span {
+  border-right: 1.5em solid #3e3f4f;
+}
+
+/* next bttn */
+.viewer__nav--next span {
+  border-left: 1.5em solid #151515;
+}
+
+.viewer__nav--next:hover span {
+  border-left: 1.5em solid #444;
+}
+
+.viewer__nav--next--activated span {
+  border-left: 1.5em solid #181c22;
+}
+
+.viewer__nav--next--activated:hover span {
+  border-left: 1.5em solid #3e3f4f;
+}
+
+.viewer__nav--disabled {
+  cursor: default;
+  visibility: hidden;
+}
+
+/* PAGE COUNTER */
+.viewer__page-counter-container {
+  position: fixed;
+  width: 100%;
+  bottom: 1em;
+  text-align: center;
+}
+
+.viewer__page-counter {
+  background-color: rgba(20,20,20,0.5);
+  padding: 2px 8px 4px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway';
+  border-radius: 5px;
+}
+
+
+/* MOBILE VIEW */
+
+.viewer-controls {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .viewer-controls {
+    display: block;
+  }
+
+  .viewer__nav {
+    display: none;
+  }
+
+  .viewer__image {
+    max-width: 100%;
+  }
+}
