@@ -1,5 +1,5 @@
 const DISABLED_CLASS = 'viewer__nav--disabled',
-      LAST_PAGE = 22;
+      LAST_PAGE = 23;
 
 let currentPage = -1,
   lastVisitedPage = 0,
@@ -31,7 +31,7 @@ let currentPage = -1,
     if (isLastPage) findByClass('viewer__nav--next').classList.add(DISABLED_CLASS);
 
     if (page > lastVisitedPage) lastVisitedPage = page;
-    
+
     findByClass('viewer__current-page').innerText = (currentPage + 1)
   },
 
